@@ -4,7 +4,7 @@
 --======================================================================================================
 
 --// Dependencies
-local Helper = require(script:WaitForChild("Helper"))
+local Helper = require(script.Required:WaitForChild("Helper"))
 
 --// Folders
 _RUM = {}
