@@ -6,18 +6,24 @@
 --// Dependencies
 local Helper = require(script.Required:WaitForChild("Helper"))
 
+--// Services
+local RunService = game:GetService("RunService")
+
 --// Folders
 _RUM = {}
 _RUM.General = {}
 _RUM.Objects = {}
 _RUM.Tables = {}
+_RUM.Studio = {}
 _RUM.Tools = {}
 _RUM.Audio = {}
+
 	
 --// Aliases
 local cont_General = _RUM.General
 local cont_Objects = _RUM.Objects
 local cont_Tables = _RUM.Tables
+local cont_Studio = _RUM.Studio
 local cont_Tools = _RUM.Tools
 local cont_Audio = _RUM.Audio
 
@@ -72,6 +78,13 @@ local debOut = Helper.DebugPrint
 				game.Debris:AddItem(beam,appearance.LifeTime or 1)
 			end
 			return {Hit = hitPart or nil, HitPos = hitPosition or nil}
+		end
+		
+		cont_General.GetGameContext = function(c) -- returns table, {Client,Server,Running,Edit,Studio,StudioRun}
+			local contexts = {Client = RunService:IsClient(); Server = RunService:IsServer(); Running = RunService:IsRunning(); 
+				Edit = RunService:IsEdit(); Studio = RunService:IsStudio(); StudioRun = RunService:IsRunMode();}
+			-- if c then return the chosen value (if exists), else, return entire table
+			if c then local chosen = contexts[c]; if chosen ~= nil then return chosen; else return nil; end else return contexts; end
 		end
 	
 --=======================================================================================================
