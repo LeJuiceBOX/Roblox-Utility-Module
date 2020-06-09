@@ -169,10 +169,6 @@ local debOut = Helper.DebugPrint
 			game:GetService("Debris"):AddItem(sound,sound.TimeLength+(0.1))
 			return sound;
 		end
-		
-		cont_Audio.PlayID = function(audioId,location,volume,pitch)
-			warn("Does nothing rn.")
-		end
 	
 --=======================================================================================================
 debOut("Loaded successfully.")
