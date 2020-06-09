@@ -10,7 +10,7 @@ local Data = Main.Data
 local module = {}
 	
 	module.ModPrint = function(cont,t)
-		local text = Config.PrintName.Value " - "..tostring(cont)  
+		local text = Config.PrintName.Value.." - "..tostring(cont)  
 		if not t or t =='print' or t=='p' then print(text);
 		elseif t=='warn' or t=='wrn' or t=='w' then warn(text);
 		elseif t=='error' or t =='err' or t=='e' then error(text); end
