@@ -44,7 +44,7 @@ return{
 		val_version.Name = "|- Version"
 		val_tempfolder_name.Name = "TempFolder_Name"
 		val_tempfolder_location.Name = "TempFolder_Location"
-		 (x2)
+		
 		--// VALUE REPLACMENT
 		val_print_name.Value = "RUM"
 		val_auto_update.Value = true
