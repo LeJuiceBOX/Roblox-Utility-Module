@@ -1,6 +1,6 @@
 --======================================================================================================
 --// Author: 	Le_JuiceBOX [Larrold#7001] [Discord ID: 263073829226676226]							   
---// Desc:		This is how the plugin generates all RUM's descendentes.                                                                
+--// Desc:		This is how the plugin generates all RUM's descendants.                                                                
 --======================================================================================================
 
 return{
