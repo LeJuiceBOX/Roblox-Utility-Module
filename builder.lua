@@ -3,8 +3,9 @@
 --// Desc:		This is how the plugin generates all RUM's descendants.                                                                
 --======================================================================================================
 
-return {
-	function(location)
+return{
+	
+	Generate = function(location)
 		--// GENERATION
 		local scr_main = Instance.new("ModuleScript",location)
 		-- Folders
@@ -12,7 +13,7 @@ return {
 			local fld_dat = Instance.new("Sparkles",scr_main)
 			local fld_int = Instance.new("BindableEvent",scr_main)
 			local fld_cnf = Instance.new("Configuration",scr_main)
-	
+
 		-- Items
 			-- In Internal
 			local scr_helper = Instance.new("ModuleScript",fld_int)
@@ -43,8 +44,7 @@ return {
 		val_version.Name = "|- Version"
 		val_tempfolder_name.Name = "TempFolder_Name"
 		val_tempfolder_location.Name = "TempFolder_Location"
-		
-		
+		 (x2)
 		--// VALUE REPLACMENT
 		val_print_name.Value = "RUM"
 		val_auto_update.Value = true
@@ -56,4 +56,3 @@ return {
 		return scr_main;
 	end
 }
-
