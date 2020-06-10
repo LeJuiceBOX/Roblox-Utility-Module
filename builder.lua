@@ -11,7 +11,7 @@ return{
 		-- Folders
 			local fld_abt = Instance.new("RemoteFunction",scr_main)
 			local fld_dat = Instance.new("Sparkles",scr_main)
-			local fld_int = Instance.new("Folder",scr_main)
+			local fld_int = Instance.new("BindableEvent",scr_main)
 			local fld_cnf = Instance.new("Configuration",scr_main)
 
 		-- Items
@@ -22,9 +22,9 @@ return{
 			local txt_updates = Instance.new("LocalScript",fld_abt)
 			local val_version = Instance.new("StringValue",fld_abt)
 			-- In Data
-			local val_print_name = Instance.new("StringValue",fld_int)
-			local val_auto_update = Instance.new("BoolValue",fld_int)
-			local val_debug_mode = Instance.new("BoolValue",fld_int)
+			local val_print_name = Instance.new("StringValue",fld_dat)
+			local val_auto_update = Instance.new("BoolValue",fld_dat)
+			local val_debug_mode = Instance.new("BoolValue",fld_dat)
 			-- In Configuration
 			local val_tempfolder_name = Instance.new("StringValue",fld_cnf)
 			local val_tempfolder_location = Instance.new("ObjectValue",fld_cnf)
