@@ -1,5 +1,10 @@
 --[[
 
+  || Ver 1.1.1 (6/10/20) ||
+  > Fixed module breaking bug
+
+-------------------------------------------
+
   || Ver 1.1.0 (6/10/20) ||
   > Plugin can now fully reconstruct RUM
   > Restructured RUM's descendants
