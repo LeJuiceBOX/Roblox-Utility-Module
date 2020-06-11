@@ -4,7 +4,7 @@
 --======================================================================================================
 
 --// Dependencies
-local Helper = require(script.Required:WaitForChild("Helper"))
+local Helper = require(script:WaitForChild("|- Internal"):WaitForChild("Helper"))
 
 --// Services
 local RunService = game:GetService("RunService")
@@ -19,6 +19,10 @@ _RUM.Audio = {}
 
 	
 --// Aliases
+local data = script["|- Data"]
+local about = script["|- About"]
+local internal = script["|- Internal"]
+local config = script["|- Config"]
 local cont_General = _RUM.General
 local cont_Objects = _RUM.Objects
 local cont_Tables = _RUM.Tables
