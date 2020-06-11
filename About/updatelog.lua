@@ -2,9 +2,11 @@
 
   || Ver 1.1.0 (6/10/20) ||
   > Plugin can now fully reconstruct RUM
+  > Restructured RUM's descendants
   > Cleaned up plugin code
   > Cleaned up RUM code
   > Made things look pretty
+  > Fixed bugs
 
 -------------------------------------------
 
