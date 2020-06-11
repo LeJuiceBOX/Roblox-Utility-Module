@@ -4,8 +4,10 @@
 --======================================================================================================
 
 local Main = script.Parent.Parent
-local Config = Main.Configuration
-local Data = Main.Data
+local Data = Main["|- Data"]
+local about = Main["|- About"]
+local internal = Main["|- Internal"]
+local Config = Main["|- Config"]
 
 local module = {}
 	
