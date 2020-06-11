@@ -14,7 +14,6 @@ _RUM = {}
 _RUM.General = {}
 _RUM.Objects = {}
 _RUM.Tables = {}
-_RUM.Studio = {}
 _RUM.Tools = {}
 _RUM.Audio = {}
 
@@ -23,7 +22,6 @@ _RUM.Audio = {}
 local cont_General = _RUM.General
 local cont_Objects = _RUM.Objects
 local cont_Tables = _RUM.Tables
-local cont_Studio = _RUM.Studio
 local cont_Tools = _RUM.Tools
 local cont_Audio = _RUM.Audio
 
