@@ -1,5 +1,13 @@
 --[[
 
+  || Ver 1.1.0 (6/10/20) ||
+  > Plugin can now fully reconstruct RUM
+  > Cleaned up plugin code
+  > Cleaned up RUM code
+  > Made things look pretty
+
+-------------------------------------------
+
   || Ver 1.0.3 (6/9/20) ||
   > Added General.GetGameContext
   > Fixed internal issues
